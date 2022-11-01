@@ -1,0 +1,41 @@
+{
+    "name": "lockminds/whatsapp",
+    "description": "Lockminds whatsapp business API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kelvin Chingoma",
+            "email": "kelvin@kelvin.co.tz",
+            "homepage": "https://www.kelvin.co.tz"
+        }
+    ],
+    "homepage": "https://github.com/lockminds/whatsapp",
+    "keywords": ["Laravel", "Whatsapp"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lockminds\\Whatsapp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lockminds\\Whatsapp\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lockminds\\Whatsapp\\WhatsappServiceProvider"
+            ],
+            "aliases": {
+                "Whatsapp": "Lockminds\\Whatsapp\\Facades\\Whatsapp"
+            }
+        }
+    }
+}
